@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0%;
+    padding: 0;
     box-sizing: border-box;
 } 
 body {
@@ -12,12 +12,12 @@ header {
     text-align: center;
     padding: 90px 20px 70px;
     background-color: #130d1c;
-    border-bottom: 1psolid #49233f;
+    border-bottom: 1px solid #49233f;
 }
 header h1 {
     color : #e8dff0; 
-    font-size: 48px;
-    letter-spacing: 5px;
+    font-size: 34px;
+    letter-spacing: 3px;
     margin-bottom: 18px;
 }
 header p  first-child {
@@ -26,9 +26,9 @@ header p  first-child {
     letter-spacing: 3px;
     margin-bottom: 22px;
 }
-headrer p  :last-child {
+headrer  p:last-child {
     color: #b9a9c5;
-    font-size:17px; 
+    font-size:15px; 
 }
 nav a { 
     color: #c5b4d2;
@@ -42,7 +42,7 @@ nav {
     gap: 35px;
     padding: 15px;
     background-color: #0f0a16;
-    border-bottom: 1px;
+    border-bottom: 1px solid #302039;
 }
 main {
 max-width: 900px;
@@ -51,12 +51,6 @@ padding: 35px;
 }
 main h2 {
     color: #c18aaa;
-    font-size: 30px;
-    margin-bottom: 22px;
-    letter-spacing: 2px;
-}
-main p {
-    color: #b9a9c5;
     font-size: 30px;
     margin-bottom: 22px;
     letter-spacing: 2px;
@@ -87,4 +81,14 @@ footer p {
     color: #9d8ba9;
     font-size: 14px;
     line-height: 1.8;
+}
+@media screen and ( max-width : 768px ) { 
+    nav{
+        flex-wrap: wrap;
+        gap:  18px;
+        padding: 18px 12p;
+    }
+    nav a {
+        font-size: 14px;
+    }
 }
