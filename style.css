@@ -176,4 +176,75 @@ color: #b9a9c5;
 font-size: 18px;
 line-height: 1.8;
 }
+.character-intro {
+    margin-bottom: 55px;
+padding: 30px;
+border-bottom: 1px solid #70405f;
+}
+.character-intro >p:first-child {
+color: #d18ab5;
+font-size: 14px;
+letter-spacing: 3px;
+margin-bottom: 18px;
+}
+.character-intro h2 {
+color: #ead8f2;
+font-size: 28px;
+margin-bottom: 15px;
+}
+.character-card {
+margin: 25px 0;
+padding: 30px;
+background-color: #1c1228;
+border: 1px solid #70405f;
+border-left: 3px solid #713653;
+}
+.character-card > p:first-child {
+color: #d18ab5;
+font-size: 13px;
+letter-spacing: 3px;
+margin-bottom: 15px;
+}
+.character-card h2 {
+color: #ead8f2;
+font-size: 30px;
+letter-spacing: 3px;
+margin-bottom: 12px;
+}
+.character-card p:last-child {
+color: #9d8ba9;
+font-size: 14px;
+letter-spacing: 2px;
+}
+.file-notes {
+    margin-top: 22px;
+    padding: 18px;
+    background-color: #130d1c;
+    border-left: 2px solid #c04b78;
+    color: #c5b4d2;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.character-image {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin: 20px 0;
+    border: 1px solid #70405f;
+}
+.character-card {
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
 
+.character-card:hover {
+    border-color: #c04b78;
+    background-color: #24152f;
+}
+.character-image {
+    transition: transform 0.3s ease;
+}
+
+.character-image:hover {
+    transform: scale(1.04);
+}
