@@ -86,3 +86,20 @@ I used AI assistance during parts of the development process for guidance, expla
 ## Github Repository
 view the source code :
 https://github.com/bhoomikaa-sh/the-magnus-file
+
+## Screenshots
+
+### Home Page
+![Home Page](home.png)
+
+### Episode Archives
+![Episode Archives](episodes.png)
+
+### Character Files
+![Character Files](characters.png)
+
+### Vampire Lore
+![Vampire Lore](lore.png)
+
+### Evidence Room
+![Evidence Room](evidence.png)
