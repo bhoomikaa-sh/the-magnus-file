@@ -68,13 +68,10 @@ Setting up GitHub Pages was another part of the process. I am currently working 
 
 Building this project helped me understand how a website comes together beyond just writing individual HTML elements.
 
-## Screenshots
-
-Screenshots of the website will be added here.
 
 ## Live Demo
 
-Coming soon — GitHub Pages deployment is being resolved.
+https://bhoomikaa-sh.github.io/the-magnus-file/
 
 ## Credits and Disclaimer
 
