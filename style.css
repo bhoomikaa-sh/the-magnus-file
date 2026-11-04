@@ -1,312 +1,371 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
+
 body {
     background-color: #0b0810;
     color: #e8dff0;
-    font-family: georgia, serif;
+    font-family: Georgia, serif;
 }
+
+/* Header */
+
 header {
     text-align: center;
     padding: 90px 20px 70px;
     background-color: #130d1c;
     border-bottom: 1px solid #49233f;
 }
+
 header h1 {
-    color : #e8dff0; 
+    color: #e8dff0;
     font-size: 56px;
     letter-spacing: 3px;
     margin-bottom: 18px;
 }
-header p  first-child {
+
+header p:first-child {
     color: #a45b85;
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 3px;
     margin-bottom: 22px;
 }
-headrer  p:last-child {
+
+header p:last-child {
     color: #b9a9c5;
-    font-size:19px; 
+    font-size: 19px;
+    line-height: 1.6;
 }
-nav a { 
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 20px;
+    background-color: #0f0a16;
+    border-bottom: 1px solid #302039;
+}
+
+nav a {
     color: #c5b4d2;
     text-decoration: none;
     font-size: 17px;
     letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    padding: 15px;
-    background-color: #0f0a16;
-    border-bottom: 1px solid #302039;
+
+nav a:hover {
+    color: #d18ab5;
 }
+
+/* Main Layout */
+
 main {
-max-width: 900px;
-margin: 70px auto;
-padding: 35px;
+    width: 88%;
+    max-width: 1400px;
+    margin: 70px auto;
+    padding: 35px;
 }
+
 main h2 {
     color: #c18aaa;
     font-size: 34px;
     margin-bottom: 22px;
     letter-spacing: 2px;
 }
+
 main p {
     color: #b9a9c5;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.8;
-} 
-.archive-note { 
+}
+
+/* Archive Note */
+
+.archive-note {
     margin-top: 65px;
-    padding: 30px;
+    padding: 35px;
     border-left: 2px solid #713653;
     background-color: #130d1c;
 }
+
 .archive-note h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 15px;
 }
+
+/* Footer */
+
 footer {
     text-align: center;
-    padding: 30px 15px;
+    padding: 35px 15px;
     margin-top: 80px;
     background-color: #130d1c;
     border-top: 1px solid #49233f;
 }
+
 footer p {
     color: #9d8ba9;
     font-size: 15px;
     line-height: 1.8;
 }
-@media screen and ( max-width : 768px ) { 
-    nav{
-        flex-wrap: wrap;
-        gap:  18px;
-        padding: 18px 12p;
-    }
-    nav a {
-        font-size: 14px;
-    }
-}
+
+/* Episode Archives */
+
 .episode-intro {
     margin-bottom: 45px;
-    padding-bottom: 25px;
+    padding: 30px;
     border-bottom: 1px solid #49233f;
 }
-.episode-intro> p:first-child {
+
+.episode-intro > p:first-child {
     color: #a45b85;
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 3px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
+
 .episode-card {
-    margin: 25px 0;
-    padding: 28px;
+    margin: 30px 0;
+    padding: 32px;
     background-color: #1c1228;
     border: 1px solid #70405f;
     border-left: 3px solid #713653;
-}
-.episode-card> p:first-child {
-    color: #d18ab5;
-    font-size: 14px;
-    letter-spacing: 2px;
-    margin-bottom: 14px;
-}
-.episode-card h2 {
-    color: #ead8f2;
-    font-size: 28px;
-    margin-bottom: 12px;
-}
-.episode-card {
     transition: 0.3s ease;
 }
+
+.episode-card > p:first-child {
+    color: #d18ab5;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.episode-card h2 {
+    color: #ead8f2;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
 .episode-card:hover {
     border-color: #c16b9b;
     background-color: #24152f;
     transform: translateY(-4px);
 }
+
 .archive-banner {
     width: 100%;
-    height: 280px;
-object-fit: cover;
-display: block;
-margin: 30px 0 45px;
-border: 1px solid #70405f;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    margin: 30px 0 45px;
+    border: 1px solid #70405f;
 }
+
 .season-divider {
     margin: 55px 0 25px;
     padding-bottom: 15px;
     border-bottom: 1px solid #70405f;
 }
+
 .season-divider span {
     color: #d18ab5;
-font-size: 22px;
-letter-spacing: 4px;
+    font-size: 24px;
+    letter-spacing: 4px;
 }
+
 .season-divider p {
     color: #9d8ba9;
-font-size: 14px;
-letter-spacing: 4px;
-margin-top: 8px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-top: 8px;
 }
+
 .archive-notice {
-margin-top: 75px;
-padding: 35px;
-text-align: center;
-background-color: #1c1228;
-border: 1pxsolid #70405f;
-}
-.archive-notice >  p:first-child {
-color: #d18ab5;
-font-size: 14px;
-letter-spacing: 3px;
-margin-bottom: 18px;
-}
-.archive-notice h2 {
-color: #ead8f2;
-font-size: 27px;
-margin-bottom: 15px;
-}
-.archive-notice p:last-child { 
-color: #b9a9c5;
-font-size: 18px;
-line-height: 1.8;
-}
-.character-intro {
-    margin-bottom: 55px;
-padding: 30px;
-border-bottom: 1px solid #70405f;
-}
-.character-intro >p:first-child {
-color: #d18ab5;
-font-size: 14px;
-letter-spacing: 3px;
-margin-bottom: 18px;
-}
-.character-intro h2 {
-color: #ead8f2;
-font-size: 28px;
-margin-bottom: 15px;
-}
-.character-card {
-margin: 25px 0;
-padding: 30px;
-background-color: #1c1228;
-border: 1px solid #70405f;
-border-left: 3px solid #713653;
-}
-.character-card > p:first-child {
-color: #d18ab5;
-font-size: 13px;
-letter-spacing: 3px;
-margin-bottom: 15px;
-}
-.character-card h2 {
-color: #ead8f2;
-font-size: 30px;
-letter-spacing: 3px;
-margin-bottom: 12px;
-}
-.character-card p:last-child {
-color: #9d8ba9;
-font-size: 14px;
-letter-spacing: 2px;
-}
-.file-notes {
-    margin-top: 22px;
-    padding: 18px;
-    background-color: #130d1c;
-    border-left: 2px solid #c04b78;
-    color: #c5b4d2;
-    font-size: 16px;
-    line-height: 1.8;
-}
-.character-image {
-    width: 180px;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-    margin: 20px 0;
+    margin-top: 75px;
+    padding: 35px;
+    text-align: center;
+    background-color: #1c1228;
     border: 1px solid #70405f;
 }
+
+.archive-notice > p:first-child {
+    color: #d18ab5;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.archive-notice h2 {
+    color: #ead8f2;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.archive-notice p:last-child {
+    color: #b9a9c5;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Character Files */
+
+.character-intro {
+    margin-bottom: 55px;
+    padding: 35px;
+    border-bottom: 1px solid #70405f;
+}
+
+.character-intro > p:first-child {
+    color: #d18ab5;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.character-intro h2 {
+    color: #ead8f2;
+    font-size: 36px;
+    margin-bottom: 18px;
+}
+
 .character-card {
+    margin: 30px 0;
+    padding: 35px;
+    background-color: #1c1228;
+    border: 1px solid #70405f;
+    border-left: 3px solid #713653;
     transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.character-card > p:first-child {
+    color: #d18ab5;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.character-card h2 {
+    color: #ead8f2;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.character-card p:last-child {
+    color: #9d8ba9;
+    font-size: 15px;
+    letter-spacing: 2px;
 }
 
 .character-card:hover {
     border-color: #c04b78;
     background-color: #24152f;
 }
+
+.file-notes {
+    margin-top: 25px;
+    padding: 22px;
+    background-color: #130d1c;
+    border-left: 2px solid #c04b78;
+    color: #c5b4d2;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
 .character-image {
+    width: 220px;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    margin: 22px 0;
+    border: 1px solid #70405f;
     transition: transform 0.3s ease;
 }
 
 .character-image:hover {
     transform: scale(1.04);
 }
+
+/* Vampire Lore */
+
 .lore-intro {
     margin-bottom: 55px;
-    padding: 30px;
+    padding: 35px;
     border-bottom: 1px solid #70405f;
 }
+
 .lore-intro > p:first-child {
     color: #d18ab5;
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 3px;
     margin-bottom: 18px;
 }
+
 .lore-intro h2 {
     color: #ead8f2;
-    font-size: 28px;
-    margin-bottom: 15px;
+    font-size: 36px;
+    margin-bottom: 18px;
 }
+
 .lore-intro p:last-child {
     color: #c5b4d2;
+    font-size: 18px;
     line-height: 1.8;
 }
+
 .lore-card {
     margin: 30px 0;
-    padding: 30px;
+    padding: 35px;
     background-color: #1c1228;
     border: 1px solid #70405f;
     border-left: 3px solid #713653;
-}
-.lore-card >p:first-child {
-color: #d18ab5;
-font-size: 14px;
-letter-spacing: 3px;
-margin-bottom: 18px;
-}
-.lore-card h2 {
-color: #ead8f2;
-font-size: 28px;
-margin-bottom: 18px;
-letter-spacing: 2px;
-}
-.lore-card p {
-color: #c5b4d2;
-font-size: 16px;
-line-height: 1.8;
-}
-.lore-card {
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
+
+.lore-card > p:first-child {
+    color: #d18ab5;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.lore-card h2 {
+    color: #ead8f2;
+    font-size: 30px;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+}
+
+.lore-card p {
+    color: #c5b4d2;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
 .lore-card:hover {
     border-color: #c04b78;
     background-color: #24152f;
 }
+
 .lore-note {
-margin-top: 24px;
-padding: 16px 20px;
-background-color: #130d1c;
-border-left: 3px solid #c04b78;
-color: #d18ab5;
-letter-spacing: 2px;
+    margin-top: 24px;
+    padding: 18px 22px;
+    background-color: #130d1c;
+    border-left: 3px solid #c04b78;
+    color: #d18ab5;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
+
+/* Evidence Room */
+
 .evidence-intro {
     margin-bottom: 55px;
     padding: 36px;
@@ -331,12 +390,14 @@ letter-spacing: 2px;
     font-size: 18px;
     line-height: 1.8;
 }
+
 .evidence-card {
     margin: 32px 0;
     padding: 36px;
     background-color: #1c1228;
     border: 1px solid #70405f;
     border-left: 4px solid #713653;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .evidence-card > p:first-child {
@@ -358,13 +419,12 @@ letter-spacing: 2px;
     font-size: 18px;
     line-height: 1.8;
 }
-.evidence-card {
-    transition: border-color 0.3s ease, background-color 0.3s ease;
-}
+
 .evidence-card:hover {
     border-color: #c04b78;
     background-color: #24152f;
 }
+
 .evidence-status {
     margin-top: 24px;
     padding: 16px 20px;
@@ -373,4 +433,104 @@ letter-spacing: 2px;
     color: #d18ab5;
     font-size: 16px;
     letter-spacing: 2px;
+}
+
+/* Mobile Layout */
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 65px 18px 50px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p:last-child {
+        font-size: 17px;
+    }
+
+    nav {
+        gap: 18px;
+        padding: 18px 12px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    main {
+        width: 94%;
+        margin: 40px auto;
+        padding: 15px;
+    }
+
+    main h2 {
+        font-size: 28px;
+    }
+
+    main p {
+        font-size: 17px;
+    }
+
+    .episode-card,
+    .character-card,
+    .lore-card,
+    .evidence-card {
+        padding: 24px;
+    }
+
+    .character-intro,
+    .lore-intro,
+    .evidence-intro {
+        padding: 24px;
+    }
+
+    .character-intro h2,
+    .lore-intro h2,
+    .evidence-intro h2 {
+        font-size: 30px;
+    }
+
+    .character-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .archive-banner {
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        width: 96%;
+        padding: 10px;
+    }
+
+    .episode-card,
+    .character-card,
+    .lore-card,
+    .evidence-card {
+        padding: 20px;
+    }
+
+    .evidence-card h2,
+    .lore-card h2,
+    .character-card h2 {
+        font-size: 25px;
+    }
 }
