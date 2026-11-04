@@ -82,3 +82,7 @@ It is not affiliated with, sponsored by or endorsed by MSA. The original series 
 ## AI Disclosure
 
 I used AI assistance during parts of the development process for guidance, explanations and troubleshooting. The website structure, HTML and CSS implementation, design decisions and project changes were worked on and edited by me.
+
+## Github Repository
+view the source code :
+https://github.com/bhoomikaa-sh/the-magnus-file
