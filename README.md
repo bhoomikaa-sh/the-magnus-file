@@ -64,7 +64,6 @@ One of the things I had to work on was keeping multiple pages organised while ma
 
 I also learned more about connecting HTML pages, organising image files, using CSS for layouts and making changes through GitHub commits.
 
-Setting up GitHub Pages was another part of the process. I am currently working through a deployment issue with GitHub.
 
 Building this project helped me understand how a website comes together beyond just writing individual HTML elements.
 
